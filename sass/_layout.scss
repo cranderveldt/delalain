@@ -1,21 +1,37 @@
 .hero-image {
 	width: 412px;
-	height: 274px;
 	padding: 200px 0 10px 0;
 	margin: auto;
 	display: block;
 }
 
-a {
+ul a {
 	float: left;
 }
 
+ul {
+	float: left;
+	width: 700px;
+}
+
 .logo{
-	padding: 0;	
+	padding: 10px 20px;
+	float: left;
+	
 }
 
 h4 {
 	padding: 25px 30px;
 	white-space: nowrap;
+	font-size: 12pt;
+	color: #4A3093;
+	font-family: 'Lato', sans-serif;
 }
 
+h4:hover {
+	color: #b5abd3;
+}
+
+a:hover {
+	text-decoration: none;
+}
