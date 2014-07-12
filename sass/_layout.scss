@@ -1,3 +1,8 @@
+
+#container {
+	text-align: center;
+}
+
 .hero-image {
 	width: 412px;
 	padding: 200px 0 10px 0;
@@ -6,18 +11,21 @@
 }
 
 ul a {
-	float: left;
+	display: inline-block;
+}
+
+ul li {
+	display: inline;
 }
 
 ul {
-	float: left;
-	width: 700px;
+	display: inline-block;
+	width: 750px;
 }
 
-.logo{
+.logo {
 	padding: 10px 20px;
-	float: left;
-	
+	display: inline-block;
 }
 
 h4 {
