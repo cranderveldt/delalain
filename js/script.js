@@ -2,7 +2,7 @@ var Main = function ($scope) {
   $scope.portfolio = [
       {
         title: 'GABRIEL', description: 'Polished steel desk with solid wood drawer. Custom hand grinding creates a warm silver/bronze color and feels as smooth as silk. 48" wide by 27" deep by 30" high. Custom sizes and finishes available.', 
-        images: ['','']
+        images: ['/images/press-img.jpg','/images/home-table.jpg']
       }
     , {
         title: 'GABRIELLE', description: 'Polished steel console with solid wood drawer. Custom hand grinding ensures a unique finish that has a warm silver/bronze color and feels as smooth as silk. 48" wide by 12" deep by 32" high. Custom sizes and finishes available.', 
@@ -64,7 +64,13 @@ var Main = function ($scope) {
         title: 'GASPAR', description: 'Armoir with wenge wood exterior and white oak interior. Blackened steel base and custom steel handles. 46" wide by 24" deep by 88" high. Custom sizes and finishes available.', 
         images: ['']
       }
-  ]
+  ];
+  $scope.getPrimaryImage = function(item) {
+    return item.primary_image || item.images[0];
+  };
+  $scope.changePrimaryImage = function(item, thumb) {
+    item.primary_image = thumb;
+  };
 };
 var app = angular.module('delalain', []);
 app.controller('Main',['$scope', Main]);

@@ -31,7 +31,7 @@
         <div class="gallery-item" ng-repeat="item in portfolio">
           <div class="images">
             <div class="photo">
-              <div class="img" ng-style="{ backgroundImage: 'url(' + item.images[0] + ')' }"></div>
+              <div class="img" ng-style="{ backgroundImage: 'url(' + getPrimaryImage(item) + ')' }"></div>
             </div>
           </div>
           <div class="description">
@@ -40,7 +40,7 @@
           </div>
           <div class="views">
             <div class="photo" ng-repeat="thumb in item.images">
-              <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }"></div>
+              <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }" ng-click="changePrimaryImage(item, thumb)"></div>
             </div>
           </div>
         </div>
