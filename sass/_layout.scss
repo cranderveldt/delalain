@@ -6,7 +6,7 @@
   text-align: center;
   position: relative;
   @include max-width(800px);
-  margin: 40px auto 20px;
+  margin: 40px auto 30px;
   ul {
     padding: 12px 0 0 180px;
     margin: 0;
@@ -27,11 +27,14 @@
     left: 0;
   }
 }
-
-
-
-
-
-
-
+.photo {
+  @include intrinsic-ratio('.img');
+  .img {
+    background: transparent url() center center no-repeat;
+    background-size: contain;
+  }
+  .thumb {
+    background-size: cover;
+  }
+}
 

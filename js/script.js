@@ -1,5 +1,12 @@
 var Main = function ($scope) {
   $scope.interval = 5000;
+  $scope.home = [
+      '/images/home-bertrand.jpg'
+    , '/images/home-gabriel.jpg'
+    , '/images/home-leon.jpg'
+    , '/images/home-masada.jpg'
+    , '/images/home-simon.jpg'
+  ];
   $scope.portfolio = [
       {
         title: 'GABRIEL', description: 'Polished steel desk with solid wood drawer. Custom hand grinding creates a warm silver/bronze color and feels as smooth as silk. 48" wide by 27" deep by 30" high. Custom sizes and finishes available.', 
@@ -71,6 +78,9 @@ var Main = function ($scope) {
   };
   $scope.changePrimaryImage = function(item, thumb) {
     item.primary_image = thumb;
+  };
+  $scope.getRandomHomePhoto = function() {
+    return $scope.home[Math.floor(Math.random() * $scope.home.length)];
   };
 };
 var app = angular.module('delalain', ['ngTouch','ui.bootstrap']);
