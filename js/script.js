@@ -1,4 +1,5 @@
 var Main = function ($scope) {
+  $scope.interval = 5000;
   $scope.portfolio = [
       {
         title: 'GABRIEL', description: 'Polished steel desk with solid wood drawer. Custom hand grinding creates a warm silver/bronze color and feels as smooth as silk. 48" wide by 27" deep by 30" high. Custom sizes and finishes available.', 
@@ -26,7 +27,7 @@ var Main = function ($scope) {
       }
     , {
         title: 'LILY', description: 'Quartersawn Zebrawood side-table with hand turned legs. The top of this piece has diamond cut veneer and a solid wood drawer with soft close runners. 48" wide by 27" deep by 30" high. Custom sizes and finishes available.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'MASADA', description: 'Walnut day bed with built-in drawers. 83" wide by 42" deep by 38.5" high. Custom sizes and finishes available upon request.', 
@@ -34,31 +35,31 @@ var Main = function ($scope) {
       }
     , {
         title: 'SIMON', description: 'African mahogany desk with raw steel legs and soft-closing drawers. 60" wide by 22" deep and 29" high. Custom sizes and finishes available upon request.', 
-        images: ['/images/portfolio/simon-1.jpg','/images/portfolio/simon-2.jpg','/images/portfolio/simon-3.jpg','/images/portfolio/simon-4.jpg']
+        images: ['/images/portfolio/simon-1.jpg','/images/portfolio/simon-3.jpg','/images/portfolio/simon-4.jpg']
       }
     , {
         title: 'CELESTINE', description: 'Raw steel lamp with Chinese lacquered base and linen shade 88" high; base - 18"; shade - 24" wide by 12" high. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'ETOILE', description: 'Convex mirror with solid wood frame. The finish pays homage to the AMerican flag. 42" in diameter. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'MORTIMER', description: 'Wood frame is sculpted to resemble circular ripples across still water. Mirror has a beveld edge. 31.5" in diameter. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'MARGUERITE', description: 'Solid wood frame with unique finish that has the texture of leather. Mirror has a beveled edge. 44" in diameter. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'MORTIMER', description: 'Wood frame is sculpted to resemble circular ripples across still water. Mirror has a beveled edge. 23.5" in diameter. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'MARVEL', description: 'Convex mirror with a solid wood frame finished in an antique crackled paint. 38" in diameter. Custom sizes and finishes available upon request.', 
-        images: ['']
+        images: []
       }
     , {
         title: 'GASPAR', description: 'Armoir with wenge wood exterior and white oak interior. Blackened steel base and custom steel handles. 46" wide by 24" deep by 88" high. Custom sizes and finishes available.', 
@@ -72,9 +73,9 @@ var Main = function ($scope) {
     item.primary_image = thumb;
   };
 };
-var app = angular.module('delalain', []);
+var app = angular.module('delalain', ['ngTouch','ui.bootstrap']);
 app.controller('Main',['$scope', Main]);
-app.directive('dlFunction', function () {
+app.directive('dlSlideshow', function () {
   return {
     replace: false,
     transclude: false,

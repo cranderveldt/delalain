@@ -7,8 +7,8 @@
   <title>Atelier Delalain</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery.js"></script>
-  <script src="js/lib.js"></script>
   <script src="js/angular.js"></script>
+  <script src="js/lib.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body class="portfolio-page" ng-controller="Main">
@@ -28,22 +28,24 @@
     </div>
     <div id="content">
       <div class="portfolio">
-        <div class="gallery-item" ng-repeat="item in portfolio">
-          <div class="images">
-            <div class="photo">
-              <div class="img" ng-style="{ backgroundImage: 'url(' + getPrimaryImage(item) + ')' }"></div>
+        <carousel interval="interval">
+          <slide ng-repeat="slide in portfolio" active="slide.active" class="gallery-item">
+            <div class="images" ng-show="slide.images.length > 0">
+              <div class="photo">
+                <div class="img" ng-style="{ backgroundImage: 'url(' + getPrimaryImage(slide) + ')' }"></div>
+              </div>
             </div>
-          </div>
-          <div class="description">
-            <h3 ng-bind="item.title"></h3>
-            <p ng-bind="item.description"></p>
-          </div>
-          <div class="views">
-            <div class="photo" ng-repeat="thumb in item.images">
-              <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }" ng-click="changePrimaryImage(item, thumb)"></div>
+            <div class="description">
+              <h3 ng-bind="slide.title"></h3>
+              <p ng-bind="slide.description"></p>
             </div>
-          </div>
-        </div>
+            <div class="views" ng-show="slide.images.length > 1">
+              <div class="photo" ng-repeat="thumb in slide.images">
+                <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }" ng-click="changePrimaryImage(slide, thumb)"></div>
+              </div>
+            </div>
+          </slide>
+        </carousel>
       </div>
     </div>
   </div>

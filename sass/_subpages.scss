@@ -53,8 +53,11 @@
 }
 
 /* portfolio */
+.portfolio {
+}
 .gallery-item {
   position: relative;
+  background: #FFF;
 }
 .photo {
   @include intrinsic-ratio('.img');
