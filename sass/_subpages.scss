@@ -51,3 +51,27 @@
   color: #4A3093;
   text-align: center;
 }
+
+/* portfolio */
+.gallery-item {
+  position: relative;
+}
+.photo {
+  @include intrinsic-ratio('.img');
+  .img {
+    background: transparent url() center center no-repeat;
+    background-size: contain;
+  }
+  .thumb {
+    background-size: cover;
+  }
+}
+.views {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .photo {
+    padding-bottom: 100%;
+  }
+}
