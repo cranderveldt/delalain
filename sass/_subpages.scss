@@ -72,6 +72,9 @@
     cursor: pointer;
   }
 }
+.carousel-indicators {
+  display: none;
+}
 .carousel-control {
   text-shadow: none;
   @include font-size(36, 1);
