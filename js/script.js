@@ -18,7 +18,7 @@ var Main = function ($scope) {
       }
     , {
         title: 'Gabrielle Demi-Lune', description: 'Polished steel Demi-Lune Console. Custom hand grinding ensures a unique finish that has a warm silver/bronze color and feels as smooth as silk. 44" wide by 16" deep by 32" high. Custom sizes and finishes available.', 
-        images: ['/images/portfolio/gabrielle_demi_lune-1.jpg','/images/portfolio/gabrielle_demi_lune-2.jpg']
+        images: ['/images/portfolio/gabrielle_demi_lune-1.jpg','/images/portfolio/gabrielle_demi_lune-2.jpg','/images/portfolio/gabrielle_demi_lune-3.jpg']
       }
     , {
         title: 'Marie', description: 'Hand carved white oak side-table with a Ceruse paint finish. Wnge legs are turned to look like stilettos. Drawers on soft close runners. 30" wide by 20" deep by 24" high. Custom sizes and finishes available.', 
