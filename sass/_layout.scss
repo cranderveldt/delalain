@@ -1,30 +1,66 @@
 #content {
   @include max-width(800px);
   margin: 20px auto 0;
+  padding: 0 15px;
+  @include above-width(800px) {
+    padding: 0;
+  }
 }
 #nav {
-  text-align: center;
   position: relative;
+  text-align: center;
   @include max-width(800px);
   margin: 40px auto 30px;
+  @include above-width(800px) {
+    text-align: right;
+  }
   ul {
-    padding: 12px 0 0 180px;
     margin: 0;
+    padding: 12px 0 0;
+    @include clearfix;
+    @include above-width(800px) {
+      padding: 12px 0 0 180px;
+    }
   }
   li {
     display: inline;
-  }
-  a {
-    @include inline-block(middle);
-    text-transform: uppercase;
-    padding: 0 15px;
-    font-weight: 300;
-    @include font-size(14, 1);
+    @include above-width(600px) {
+      &:first-child a {
+        padding-left: 0;
+      }
+      &:last-child a {
+        padding-right: 0;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-weight: 300;
+      @include font-size(14, 1);
+      width: 50%;
+      float: left;
+      @include above-width(600px) {
+        float: none;
+        width: auto;
+        @include inline-block(middle);
+        padding: 0 20px;
+      }
+    }
   }
   .logo {
-    position: absolute;
     top: 0;
     left: 0;
+    @include inline-block(middle);
+    @include above-width(800px) {
+      position: absolute;
+      display: block;
+    }
+    a {
+      display: block;
+      padding: 0;
+    }
   }
 }
 .photo {
