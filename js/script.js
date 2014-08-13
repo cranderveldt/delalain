@@ -1,20 +1,20 @@
 var Main = function ($scope) {
   $scope.interval = 5000;
   $scope.home = [
-      '/images/home-bertrand.jpg'
-    , '/images/home-gabriel.jpg'
-    , '/images/home-leon.jpg'
-    , '/images/home-masada.jpg'
-    , '/images/home-simon.jpg'
+      '/images/portfolio/bertrand-1.jpg'
+    , '/images/portfolio/gabriel-1.jpg'
+    , '/images/portfolio/leon-1.jpg'
+    , '/images/portfolio/masada.jpg'
+    , '/images/portfolio/simon-1.jpg'
   ];
   $scope.portfolio = [
       {
         title: 'Gabriel', description: 'Polished steel desk with solid wood drawer. Custom hand grinding creates a warm silver/bronze color and feels as smooth as silk. 48" wide by 27" deep by 30" high. Custom sizes and finishes available.', 
-        images: ['/images/portfolio/gabriel-1.jpg','/images/portfolio/gabriel-2.jpg','/images/portfolio/gabriel-3.jpg','/images/portfolio/gabriel-4.jpg']
+        images: ['/images/portfolio/gabriel-1.jpg','/images/portfolio/gabriel-2.jpg','/images/portfolio/gabriel-3.jpg','/images/portfolio/gabriel-4.jpg'/*,'/images/portfolio/gabriel-5.jpg'*/]
       }
     , {
         title: 'Gabrielle', description: 'Polished steel console with solid wood drawer. Custom hand grinding ensures a unique finish that has a warm silver/bronze color and feels as smooth as silk. 48" wide by 12" deep by 32" high. Custom sizes and finishes available.', 
-        images: ['/images/portfolio/gabrielle-1.jpg']
+        images: ['/images/portfolio/gabrielle-1.jpg','/images/portfolio/gabrielle-2.jpg']
       }
     , {
         title: 'Gabrielle Demi-Lune', description: 'Polished steel Demi-Lune Console. Custom hand grinding ensures a unique finish that has a warm silver/bronze color and feels as smooth as silk. 44" wide by 16" deep by 32" high. Custom sizes and finishes available.', 
@@ -42,18 +42,18 @@ var Main = function ($scope) {
       }
     , {
         title: 'Simon', description: 'African mahogany desk with raw steel legs and soft-closing drawers. 60" wide by 22" deep and 29" high. Custom sizes and finishes available upon request.', 
-        images: ['/images/portfolio/simon-1.jpg','/images/portfolio/simon-3.jpg','/images/portfolio/simon-4.jpg']
+        images: ['/images/portfolio/simon-1.jpg','/images/portfolio/simon-2.jpg','/images/portfolio/simon-3.jpg','/images/portfolio/simon-4.jpg']
       }
     , {
-        title: 'Gaspar', description: 'Armoir with wenge wood exterior and white oak interior. Blackened steel base and custom steel handles. 46" wide by 24" deep by 88" high. Custom sizes and finishes available.', 
+        title: 'Gaspar Armoire', description: 'Armoir with wenge wood exterior and white oak interior. Blackened steel base and custom steel handles. 46" wide by 24" deep by 88" high. Custom sizes and finishes available.', 
         images: ['/images/portfolio/gaspar-1.jpg','/images/portfolio/gaspar-2.jpg','/images/portfolio/gaspar-3.jpg']
       }
     , {
-        title: 'Hannah', description: '', 
+        title: 'Hannah Side Table', description: '', 
         images: ['/images/portfolio/hannah-1.jpg','/images/portfolio/hannah-2.jpg']
       }
     , {
-        title: 'Luma', description: '', 
+        title: 'Luma Console', description: '', 
         images: ['/images/portfolio/luma-1.jpg','/images/portfolio/luma-2.jpg','/images/portfolio/luma-3.jpg','/images/portfolio/luma-4.jpg']
       }
     , {
@@ -66,7 +66,7 @@ var Main = function ($scope) {
       }
     , {
         title: 'Marie Noir', description: '', 
-        images: ['/images/portfolio/marie-noir-1.jpg','/images/portfolio/marie-noir-2.jpg']
+        images: ['/images/portfolio/marie-noir-1.jpg','/images/portfolio/marie-noir-2.jpg','/images/portfolio/marie-noir-3.jpg','/images/portfolio/marie-noir-4.jpg']
       }
     , {
         title: 'Marie Revision', description: '', 
