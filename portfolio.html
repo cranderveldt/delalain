@@ -30,19 +30,23 @@
       <div class="portfolio">
         <carousel interval="interval">
           <slide ng-repeat="slide in portfolio" active="slide.active" class="gallery-item">
-            <div class="images" ng-show="slide.images.length > 0">
-              <div class="photo" ng-class="slide.images.length > 1 ? 'bg-left' : 'bg-center'">
+            <div class="images" ng-show="slide.images.length > 0" ng-class="slide.images.length > 1 ? 'has-padding' : 'no-padding'">
+              <div class="photo">
                 <div class="img" ng-style="{ backgroundImage: 'url(' + getPrimaryImage(slide) + ')' }"></div>
+              </div>
+            </div>
+            <div class="views" ng-show="slide.images.length > 1">
+              <div class="clearfix">
+                <div class="column" ng-repeat="thumb in slide.images">
+                  <div class="photo">
+                    <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }" ng-click="changePrimaryImage(slide, thumb)"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="description">
               <h3 ng-bind="slide.title"></h3>
               <p ng-bind="slide.description"></p>
-            </div>
-            <div class="views" ng-show="slide.images.length > 1">
-              <div class="photo" ng-repeat="thumb in slide.images">
-                <div class="img thumb" ng-style="{ backgroundImage: 'url(' + thumb + ')' }" ng-click="changePrimaryImage(slide, thumb)"></div>
-              </div>
             </div>
           </slide>
         </carousel>
