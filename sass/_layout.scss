@@ -60,10 +60,11 @@
     a {
       display: block;
       padding: 0;
-      width: 168px;
+      width: 164px;
       height: 34px;
       background: transparent url("/images/main-logo.png") center center no-repeat;
-      background-image: url("/images/main-logo.svg"), none;
+      background-image: url("/images/main-logo-hi-res.jpg"), none;
+      background-size: 164px 34px;
     }
   }
 }
