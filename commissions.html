@@ -27,7 +27,16 @@
       </ul>
     </div>
     <div id="content">
-      <div class="hero-image">
+      <div class="commissions">
+        <carousel interval="interval">
+          <slide ng-repeat="slide in commissions" active="slide.active" class="gallery-item">
+            <div class="images">
+              <div class="photo">
+                <div class="img" ng-style="{ backgroundImage: 'url(' + slide.url + ')' }"></div>
+              </div>
+            </div>
+          </slide>
+        </carousel>
       </div>
     </div>
   </div>

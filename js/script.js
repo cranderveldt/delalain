@@ -73,6 +73,27 @@ var Main = function ($scope) {
         images: ['/images/portfolio/marie-revision-1.jpg','/images/portfolio/marie-revision-2.jpg','/images/portfolio/marie-revision-3.jpg']
       }
   ];
+  $scope.commissions = [
+      { url: "/images/commissions/com-01.jpg" }
+    , { url: "/images/commissions/com-02.jpg" }
+    , { url: "/images/commissions/com-03.jpg" }
+    , { url: "/images/commissions/com-04.jpg" }
+    , { url: "/images/commissions/com-05.jpg" }
+    , { url: "/images/commissions/com-06.jpg" }
+    , { url: "/images/commissions/com-07.jpg" }
+    , { url: "/images/commissions/com-08.jpg" }
+    , { url: "/images/commissions/com-09.jpg" }
+    , { url: "/images/commissions/com-10.jpg" }
+    , { url: "/images/commissions/com-11.jpg" }
+    , { url: "/images/commissions/com-12.jpg" }
+    , { url: "/images/commissions/com-13.jpg" }
+    , { url: "/images/commissions/com-14.jpg" }
+    , { url: "/images/commissions/com-15.jpg" }
+    , { url: "/images/commissions/com-16.jpg" }
+    , { url: "/images/commissions/com-17.jpg" }
+    , { url: "/images/commissions/com-18.jpg" }
+    , { url: "/images/commissions/com-19.jpg" }
+  ];
   $scope.getPrimaryImage = function(item) {
     return item.primary_image || item.images[0];
   };
