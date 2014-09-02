@@ -66,7 +66,7 @@ var Main = function ($scope) {
       }
     , {
         title: 'Marie Noir', description: '', 
-        images: ['/images/portfolio/marie-noir-1.jpg','/images/portfolio/marie-noir-2.jpg','/images/portfolio/marie-noir-3.jpg','/images/portfolio/marie-noir-4.jpg']
+        images: ['/images/portfolio/marie-noir-1.jpg','/images/portfolio/marie-noir-2.jpg','/images/portfolio/marie-noir-3.jpg']
       }
     , {
         title: 'Marie Revision', description: '', 
