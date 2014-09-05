@@ -116,8 +116,7 @@
   display: block; 
   top: 100px;
   @include above-width(800px) {
-    margin-top: -18px;
-    top: 50%;
+    top: 170px;
   }
   &.left {
     background: transparent;
