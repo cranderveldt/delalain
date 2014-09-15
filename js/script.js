@@ -25,27 +25,27 @@ var Main = function ($scope) {
         images: ['/images/portfolio/bertrand-1.jpg','/images/portfolio/bertrand-2.jpg','/images/portfolio/bertrand-3.jpg']
       }
     , {
-        title: 'Luma Console', description: '', 
+        title: 'Luma Console', description: 'Hand carved white oak with paint finish. Light Antique (cloudy) mirror top. Custom sizes and finishes available', 
         images: ['/images/portfolio/luma-1.jpg','/images/portfolio/luma-2.jpg','/images/portfolio/luma-3.jpg']
       }
     , {
-        title: 'Marie Side Table', description: 'Hand carved white oak side-table with a Ceruse paint finish. Wnge legs are turned to look like stilettos. Drawers on soft close runners. 30" wide by 20" deep by 24" high. Custom sizes and finishes available.', 
+        title: 'Marie Side Table', description: 'Hand carved white oak side-table with a Ceruse paint finish. Wenge legs are turned to look like stilettos. Drawers on soft close runners. 30" wide by 20" deep by 24" high. Custom sizes and finishes available.', 
         images: ['/images/portfolio/marie-1.jpg','/images/portfolio/marie-2.jpg','/images/portfolio/marie-3.jpg']
       }
     , {
-        title: 'Marie Side Table (single drawer)', description: '', 
+        title: 'Marie Side Table (single drawer)', description: 'Hand carved white oak side-table with a Ceruse paint finish. Wenge legs are turned to look like stilettos. Drawers are on soft close runners. 30" wide by 20" deep by 24" high. Custom sizes and finishes available', 
         images: ['/images/portfolio/marie-revision-1.jpg','/images/portfolio/marie-revision-2.jpg','/images/portfolio/marie-revision-3.jpg']
       }
     , {
-        title: 'Marie-Cécile Side Table', description: '', 
+        title: 'Marie-Cécile Side Table', description: 'Hand carved white oak side-table with a Ceruse paint finish. Oak legs are turned to look like stilettos. Drawers are on soft close runners. 30" wide by 20" deep by 24" high. Custom sizes and finishes available', 
         images: ['/images/portfolio/marie-cecile-1.jpg','/images/portfolio/marie-cecile-2.jpg']
       }
     , {
-        title: 'Marie Chest', description: '', 
+        title: 'Marie Chest', description: 'Hand carved white oak side-table with a Ceruse paint finish. Wenge legs are turned to look like stilettos. Drawers are on soft close runners. 72" wide by 20" deep by 24" high. Custom sizes and finishes available', 
         images: ['/images/portfolio/marie-chest-1.jpg','/images/portfolio/marie-chest-2.jpg','/images/portfolio/marie-chest-3.jpg']
       }
     , {
-        title: 'Marie Noire Console', description: '', 
+        title: 'Marie Noire Console', description: 'Hand carved white oak side-table with a paint finish. Red mahogany legs are turned to look like stilettos. Drawers are on soft close runners. 30" wide by 20" deep by 32" high. Custom sizes and finishes available', 
         images: ['/images/portfolio/marie-noir-1.jpg','/images/portfolio/marie-noir-2.jpg','/images/portfolio/marie-noir-3.jpg']
       }
     , {
@@ -61,7 +61,7 @@ var Main = function ($scope) {
         images: ['/images/portfolio/simon-1.jpg','/images/portfolio/simon-2.jpg','/images/portfolio/simon-3.jpg']
       }
     , {
-        title: 'HannaH Side Table', description: '', 
+        title: 'HannaH Side Table', description: 'Dark walnut wood with highly polished chrome backing and base. The central box appears to be floating. Custom sizes and finishes available', 
         images: ['/images/portfolio/hannah-1.jpg','/images/portfolio/hannah-2.jpg']
       }
     , {
